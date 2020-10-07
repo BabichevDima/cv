@@ -116,10 +116,12 @@ body {
   justify-content: space-between;
 }
 .wrapper {
-  border-top: 5px solid #062338;
+  border-top: 0px solid #062338;
   display: block;
-  transform-origin: right top;
-  transform: rotate(-90deg);
+  transform-origin: 0 0;
+  transform: rotate(-90deg) translateX(-135%);
+  margin-right: 30px;
+  height: 50px;
   //   position: absolute;
   //   left: -169px;
   //   top: 0px;
@@ -133,6 +135,8 @@ body {
   padding: 5px 15px;
   margin: 0 15px;
   position: relative;
+  width: 100%;
+  text-align: center;
 }
 .inner:before,
 .inner:after {
@@ -184,6 +188,7 @@ body {
   margin: 0;
   margin-bottom: 5px;
   font-weight: bold;
+  width: 200px;
 }
 .university__subtitle {
   color: #000000;
@@ -201,14 +206,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-right: 30px;
 }
 .yers__lesson {
   color: #000000;
   margin: 0;
   text-transform: uppercase;
   font-weight: normal;
-}
-.wrapper.green {
 }
 .inner.green {
   background-color: #92c715;
@@ -221,8 +225,8 @@ body {
 }
 .fa.fa-black-tie{
 	color:  #92c715;
-	font-size: 70px;
-	text-align: center;
-	align-self: center;
-	margin-right: 30px;
+  font-size: 70px;
+  text-align: center;
+  align-self: center;
+  margin-right: 30px;
 }
