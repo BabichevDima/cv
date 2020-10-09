@@ -114,17 +114,16 @@ body {
   height: 20%;
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  align-items: stretch;
 }
 .wrapper {
   border-top: 0px solid #062338;
   display: block;
   transform-origin: 0 0;
-  transform: rotate(-90deg) translateX(-135%);
-  margin-right: 30px;
-  height: 50px;
-  //   position: absolute;
-  //   left: -169px;
-  //   top: 0px;
+  transform: rotate(-90deg) translateX(-105%);
+  width: 190px;
 }
 .inner {
   text-transform: uppercase;
@@ -133,9 +132,7 @@ body {
   color: #fff;
   border-radius: 0 0 10px 10px;
   padding: 5px 15px;
-  margin: 0 15px;
   position: relative;
-  width: 100%;
   text-align: center;
 }
 .inner:before,
@@ -158,7 +155,8 @@ body {
   transform: scaleX(-1);
 }
 .main {
-  height: 100%;
+  height: 80%;
+  align-self: center;
 }
 .line {
   width: 2px;
@@ -181,19 +179,18 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-}
-
-.university__title {
-  color: #000000;
-  margin: 0;
-  margin-bottom: 5px;
-  font-weight: bold;
-  width: 200px;
-}
-.university__subtitle {
-  color: #000000;
-  margin: 0;
-  font-weight: normal;
+  &__title {
+    color: #000000;
+    margin: 0;
+    margin-bottom: 5px;
+    font-weight: bold;
+    width: 300px;
+  }
+  &__subtitle {
+    color: #000000;
+    margin: 0;
+    font-weight: normal;
+  }
 }
 .fa.fa-pencil {
   font-size: 70px;
@@ -207,24 +204,74 @@ body {
   flex-direction: column;
   justify-content: space-around;
   margin-right: 30px;
-}
-.yers__lesson {
-  color: #000000;
-  margin: 0;
-  text-transform: uppercase;
-  font-weight: normal;
+  &__lesson {
+    color: #000000;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: normal;
+  }
 }
 .inner.green {
   background-color: #92c715;
+  &:before {
+    background: radial-gradient(circle at -10% 105%, transparent 70%, #92c715 70%);
+  }
+  &:after {
+    background: radial-gradient(circle at -10% 105%, transparent 70%, #92c715 70%);
+  }
 }
-.inner.green:before {
-  background: radial-gradient(circle at -10% 105%, transparent 70%, #92c715 70%);
+.fa.fa-black-tie {
+  color: #92c715;
+  font-size: 70px;
+  text-align: center;
+  align-self: center;
+  margin-right: 30px;
 }
-.inner.green:after {
-  background: radial-gradient(circle at -10% 105%, transparent 70%, #92c715 70%);
+
+.inner.crimson {
+  background-color: #f40644;
+  &:before {
+    background: radial-gradient(circle at -10% 105%, transparent 70%, #f40644 70%);
+  }
+  &:after {
+    background: radial-gradient(circle at -10% 105%, transparent 70%, #f40644 70%);
+  }
 }
-.fa.fa-black-tie{
-	color:  #92c715;
+
+.fa.fa-desktop {
+  color: #f40644;
+  font-size: 70px;
+  text-align: center;
+  align-self: center;
+  margin-right: 30px;
+}
+.inner.violet {
+  background-color: #670094;
+  &:before {
+    background: radial-gradient(circle at -10% 105%, transparent 70%, #670094 70%);
+  }
+  &:after {
+    background: radial-gradient(circle at -10% 105%, transparent 70%, #670094 70%);
+  }
+}
+.fa.fa-certificate {
+  color: #670094;
+  font-size: 70px;
+  text-align: center;
+  align-self: center;
+  margin-right: 30px;
+}
+.inner.blue {
+  background-color: #0ca3fc;
+  &:before {
+    background: radial-gradient(circle at -10% 105%, transparent 70%, #0ca3fc 70%);
+  }
+  &:after {
+    background: radial-gradient(circle at -10% 105%, transparent 70%, #0ca3fc 70%);
+  }
+}
+.fa.fa-trophy{
+  color: #0ca3fc;
   font-size: 70px;
   text-align: center;
   align-self: center;
