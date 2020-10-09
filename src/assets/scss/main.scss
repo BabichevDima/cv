@@ -12,92 +12,91 @@ body {
 .about {
   width: 35%;
   background-color: #08243a;
-  padding: 10px 0 50px 0;
+  padding: 10px 0 10px 0;
   font-family: "Montserrat";
-}
-.about__serkl {
-  background-color: #00152a;
-  color: #fff;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  border: 8px solid #fff;
-  margin: auto;
-  background-image: url(../img/Rectangle.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-.about__comment {
-  background-color: #00152a;
-  color: #fff;
-  width: 100px;
-  margin: auto;
-  border-radius: 6px;
-  font-size: 14px;
-  text-align: center;
-  position: relative;
-  margin-bottom: 20px;
-  padding: 5px;
-}
-.about__comment:after {
-  content: "";
-  border-left: 10px solid transparent;
-  border-right: 10px solid transparent;
-  border-top: 15px solid #00152a;
-  z-index: 500;
-  position: absolute;
-  top: 100%;
-  left: 40px;
-}
-.about__name {
-  text-align: center;
-  color: #fff;
-  margin: 0;
-  text-transform: uppercase;
-}
-.about__sabtitle {
-  text-align: center;
-  color: #fff;
-  margin: 0;
-  margin-bottom: 15px;
-}
-.about__contact {
-  color: #fff;
-  background-color: #00152a;
-  padding: 20px 15px;
-  margin-bottom: 10px;
-}
-.about__name-sabname {
-  margin-left: 15px;
-  text-transform: uppercase;
+  &__serkl {
+    background-color: #00152a;
+    color: #fff;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    margin: auto;
+    background-image: url(../img/Rectangle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  &__comment {
+    background-color: #00152a;
+    color: #fff;
+    width: 100px;
+    margin: auto;
+    border-radius: 6px;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    padding: 5px;
+    &:after {
+      content: "";
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 15px solid #00152a;
+      z-index: 500;
+      position: absolute;
+      top: 100%;
+      left: 40px;
+    }
+  }
+  &__name {
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  &__sabtitle {
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+  &__contact {
+    color: #fff;
+    background-color: #00152a;
+    padding: 20px 15px;
+    margin-bottom: 10px;
+  }
+  &__name-sabname {
+    margin-left: 15px;
+    text-transform: uppercase;
+  }
+  &__language {
+    text-align: left;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 5px;
+    margin-left: 45px;
+    font-weight: bold;
+  }
+  &__language-skill {
+    margin-left: 45px;
+    font-weight: normal;
+  }
+  &__hobbies {
+    color: #fff;
+    background-color: #00152a;
+    padding: 20px 15px;
+    margin-bottom: 10px;
+    margin-top: 25px;
+  }
 }
 .me {
   background-color: #08243a;
   margin-bottom: 0px;
   padding: 20px 45px;
-}
-.about__language {
-  text-align: left;
-  color: #fff;
-  margin: 0;
-  margin-bottom: 5px;
-  margin-left: 45px;
-  font-weight: bold;
-}
-.about__language-skill {
-  margin-left: 45px;
-  font-weight: normal;
-}
-
-.about__hobbies {
-  color: #fff;
-  background-color: #00152a;
-  padding: 20px 15px;
-  margin-bottom: 10px;
-  margin-top: 25px;
 }
 .hobbies {
   font-weight: normal;
@@ -106,24 +105,29 @@ body {
 .skills {
   width: 65%;
   background-color: #ffffff;
-  padding: 10px 0 50px 0;
+  padding: 10px 0 10px 0;
   font-family: "Montserrat";
 }
 .education {
-  //   position: relative;
   height: 20%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-direction: row;
   align-items: center;
   align-items: stretch;
+  position: relative;
+  border-bottom: 2px solid rgb(170, 170, 170);
+  &:last-child {
+    border-bottom: none;
+  }
 }
 .wrapper {
   border-top: 0px solid #062338;
   display: block;
   transform-origin: 0 0;
   transform: rotate(-90deg) translateX(-105%);
-  width: 190px;
+  width: 196px;
+  margin-right: -60px;
 }
 .inner {
   text-transform: uppercase;
@@ -131,32 +135,33 @@ body {
   font-family: sans-serif;
   color: #fff;
   border-radius: 0 0 10px 10px;
-  padding: 5px 15px;
+  padding: 7px 15px;
   position: relative;
   text-align: center;
-}
-.inner:before,
-.inner:after {
-  content: "";
-  display: block;
-  width: 15px;
-  height: 50%;
-  position: absolute;
-}
-.inner:before {
-  left: -14px;
-  top: 0;
-  background: radial-gradient(circle at -10% 105%, transparent 70%, #f87500 70%);
-}
-.inner:after {
-  right: -14px;
-  top: 0;
-  background: radial-gradient(circle at -10% 105%, transparent 70%, #f87500 70%);
-  transform: scaleX(-1);
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 50%;
+    position: absolute;
+  }
+  &:before {
+    left: -14px;
+    top: 0;
+    background: radial-gradient(circle at -10% 105%, transparent 70%, #f87500 70%);
+  }
+  &:after {
+    right: -14px;
+    top: 0;
+    background: radial-gradient(circle at -10% 105%, transparent 70%, #f87500 70%);
+    transform: scaleX(-1);
+  }
 }
 .main {
   height: 80%;
   align-self: center;
+  margin-right: 60px;
 }
 .line {
   width: 2px;
@@ -179,6 +184,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-right: 50px;
   &__title {
     color: #000000;
     margin: 0;
@@ -196,14 +202,15 @@ body {
   font-size: 70px;
   text-align: center;
   align-self: center;
-  margin-right: 30px;
+  position: absolute;
+  left: 640px;
   color: #f87500;
 }
 .yers {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-right: 30px;
+  margin-right: 60px;
   &__lesson {
     color: #000000;
     margin: 0;
@@ -225,9 +232,9 @@ body {
   font-size: 70px;
   text-align: center;
   align-self: center;
-  margin-right: 30px;
+  position: absolute;
+  left: 640px;
 }
-
 .inner.crimson {
   background-color: #f40644;
   &:before {
@@ -237,13 +244,13 @@ body {
     background: radial-gradient(circle at -10% 105%, transparent 70%, #f40644 70%);
   }
 }
-
 .fa.fa-desktop {
   color: #f40644;
   font-size: 70px;
   text-align: center;
   align-self: center;
-  margin-right: 30px;
+  position: absolute;
+  left: 640px;
 }
 .inner.violet {
   background-color: #670094;
@@ -259,7 +266,8 @@ body {
   font-size: 70px;
   text-align: center;
   align-self: center;
-  margin-right: 30px;
+  position: absolute;
+  left: 640px;
 }
 .inner.blue {
   background-color: #0ca3fc;
@@ -270,10 +278,11 @@ body {
     background: radial-gradient(circle at -10% 105%, transparent 70%, #0ca3fc 70%);
   }
 }
-.fa.fa-trophy{
+.fa.fa-trophy {
   color: #0ca3fc;
   font-size: 70px;
   text-align: center;
   align-self: center;
-  margin-right: 30px;
+  position: absolute;
+  left: 640px;
 }
