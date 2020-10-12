@@ -1,7 +1,300 @@
 body {
-	background-color: #000;
-	height: 200px;
-	width: 200px;
-	background-color: rgb(175, 240, 25);
+  background-color: #000;
+  height: 100%;
+}
+.container {
+  width: 1200px;
+  height: 100%;
+  background-color: #fff;
+  margin: auto;
+  display: flex;
+}
+.about {
+  width: 35%;
+  background-color: #08243a;
+  padding: 10px 0 10px 0;
+  font-family: "Montserrat";
+  &__serkl {
+    background-color: #00152a;
+    color: #fff;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 8px solid #fff;
+    margin: auto;
+    background-image: url(../img/Rectangle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  &__comment {
+    background-color: #00152a;
+    color: #fff;
+    width: 100px;
+    margin: auto;
+    border-radius: 6px;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+    padding: 5px;
+    &:after {
+      content: "";
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 15px solid #00152a;
+      z-index: 500;
+      position: absolute;
+      top: 100%;
+      left: 40px;
+    }
+  }
+  &__name {
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  &__sabtitle {
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+  &__contact {
+    color: #fff;
+    background-color: #00152a;
+    padding: 20px 15px;
+    margin-bottom: 10px;
+  }
+  &__name-sabname {
+    margin-left: 15px;
+    text-transform: uppercase;
+  }
+  &__language {
+    text-align: left;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 5px;
+    margin-left: 45px;
+    font-weight: bold;
+  }
+  &__language-skill {
+    margin-left: 45px;
+    font-weight: normal;
+  }
+  &__hobbies {
+    color: #fff;
+    background-color: #00152a;
+    padding: 20px 15px;
+    margin-bottom: 10px;
+    margin-top: 25px;
+  }
+}
+.me {
+  background-color: #08243a;
+  margin-bottom: 0px;
+  padding: 20px 45px;
+}
+.hobbies {
+  font-weight: normal;
+}
+// ==========================
+.rectangle{
+	width: 8%;
+	background-color: #ffffff;
+	padding: 10px 0 10px 0;
+	font-family: "Montserrat";
+}
+.wrapper{
+	height: 20%;
+}
 
+.skills {
+  width: 57%;
+  background-color: #ffffff;
+  padding: 10px 0 10px 0;
+  font-family: "Montserrat";
+}
+.education {
+  height: 20%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+  align-items: stretch;
+  position: relative;
+  border-bottom: 2px solid rgb(170, 170, 170);
+  margin-right: 30px;
+    padding-left: 50px;
+  &:last-child {
+    border-bottom: none;
+  }
+}
+.wrapper {
+  border-top: 0px solid #062338;
+  display: block;
+  transform-origin: 0 0;
+  transform: rotate(-90deg) translateX(-105%);
+  width: 196px;
+  margin-right: -60px;
+}
+.inner {
+  text-transform: uppercase;
+  background-color: #f87500;
+  font-family: sans-serif;
+  color: #fff;
+  border-radius: 0 0 10px 10px;
+  padding: 7px 15px;
+  position: relative;
+  text-align: center;
+  &:before,
+  &:after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 50%;
+    position: absolute;
+  }
+  &:before {
+    left: -14px;
+    top: 0;
+    background: radial-gradient(circle at -10% 105%, transparent 70%, #f87500 70%);
+  }
+  &:after {
+    right: -14px;
+    top: 0;
+    background: radial-gradient(circle at -10% 105%, transparent 70%, #f87500 70%);
+    transform: scaleX(-1);
+  }
+}
+.main {
+  height: 80%;
+  align-self: center;
+  margin-right: 60px;
+}
+.line {
+  width: 2px;
+  height: 100%;
+  background-color: black;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.ring {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #000000;
+  background-color: white;
+}
+.university {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 50px;
+  &__title {
+    color: #000000;
+    margin: 0;
+    margin-bottom: 5px;
+    font-weight: bold;
+    width: 300px;
+  }
+  &__subtitle {
+    color: #000000;
+    margin: 0;
+    font-weight: normal;
+  }
+}
+.fa.fa-pencil {
+  font-size: 70px;
+  text-align: center;
+  align-self: center;
+  position: absolute;
+  left: 550px;
+  color: #f87500;
+}
+.yers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-right: 60px;
+  &__lesson {
+    color: #000000;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+}
+.inner.green {
+  background-color: #92c715;
+  &:before {
+    background: radial-gradient(circle at -10% 105%, transparent 70%, #92c715 70%);
+  }
+  &:after {
+    background: radial-gradient(circle at -10% 105%, transparent 70%, #92c715 70%);
+  }
+}
+.fa.fa-black-tie {
+  color: #92c715;
+  font-size: 70px;
+  text-align: center;
+  align-self: center;
+  position: absolute;
+  left: 550px;
+}
+.inner.crimson {
+  background-color: #f40644;
+  &:before {
+    background: radial-gradient(circle at -10% 105%, transparent 70%, #f40644 70%);
+  }
+  &:after {
+    background: radial-gradient(circle at -10% 105%, transparent 70%, #f40644 70%);
+  }
+}
+.fa.fa-desktop {
+  color: #f40644;
+  font-size: 70px;
+  text-align: center;
+  align-self: center;
+  position: absolute;
+  left: 550px;
+}
+.inner.violet {
+  background-color: #670094;
+  &:before {
+    background: radial-gradient(circle at -10% 105%, transparent 70%, #670094 70%);
+  }
+  &:after {
+    background: radial-gradient(circle at -10% 105%, transparent 70%, #670094 70%);
+  }
+}
+.fa.fa-certificate {
+  color: #670094;
+  font-size: 70px;
+  text-align: center;
+  align-self: center;
+  position: absolute;
+  left: 550px;
+}
+.inner.blue {
+  background-color: #0ca3fc;
+  &:before {
+    background: radial-gradient(circle at -10% 105%, transparent 70%, #0ca3fc 70%);
+  }
+  &:after {
+    background: radial-gradient(circle at -10% 105%, transparent 70%, #0ca3fc 70%);
+  }
+}
+.fa.fa-trophy {
+  color: #0ca3fc;
+  font-size: 70px;
+  text-align: center;
+  align-self: center;
+  position: absolute;
+  left: 550px;
 }
