@@ -10,7 +10,7 @@ body {
   display: flex;
 }
 .about {
-  width: 30%;
+  width: 35%;
   background-color: #08243a;
   padding: 10px 0 10px 0;
   font-family: "Montserrat";
@@ -103,7 +103,7 @@ body {
 }
 // ==========================
 .rectangle{
-	width: 5%;
+	width: 8%;
 	background-color: #ffffff;
 	padding: 10px 0 10px 0;
 	font-family: "Montserrat";
@@ -113,7 +113,7 @@ body {
 }
 
 .skills {
-  width: 65%;
+  width: 57%;
   background-color: #ffffff;
   padding: 10px 0 10px 0;
   font-family: "Montserrat";
@@ -128,7 +128,7 @@ body {
   position: relative;
   border-bottom: 2px solid rgb(170, 170, 170);
   margin-right: 30px;
-    padding-left: 40px;
+    padding-left: 50px;
   &:last-child {
     border-bottom: none;
   }
@@ -215,7 +215,7 @@ body {
   text-align: center;
   align-self: center;
   position: absolute;
-  left: 590px;
+  left: 550px;
   color: #f87500;
 }
 .yers {
@@ -245,7 +245,7 @@ body {
   text-align: center;
   align-self: center;
   position: absolute;
-  left: 590px;
+  left: 550px;
 }
 .inner.crimson {
   background-color: #f40644;
@@ -262,7 +262,7 @@ body {
   text-align: center;
   align-self: center;
   position: absolute;
-  left: 590px;
+  left: 550px;
 }
 .inner.violet {
   background-color: #670094;
@@ -279,7 +279,7 @@ body {
   text-align: center;
   align-self: center;
   position: absolute;
-  left: 590px;
+  left: 550px;
 }
 .inner.blue {
   background-color: #0ca3fc;
@@ -296,5 +296,5 @@ body {
   text-align: center;
   align-self: center;
   position: absolute;
-  left: 590px;
+  left: 550px;
 }
